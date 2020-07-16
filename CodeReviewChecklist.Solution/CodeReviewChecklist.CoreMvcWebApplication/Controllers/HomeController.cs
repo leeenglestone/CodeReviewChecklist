@@ -32,7 +32,7 @@ namespace CodeReviewChecklist.CoreMvcWebApplication.Controllers
         public IActionResult About()
         {
             ViewBag.Title = "About Code Review Checklist";
-            ViewBag.MetaDescription = "Why was Code Review Checklist created any by whom?";
+            ViewBag.MetaDescription = "Why was Code Review Checklist created and by whom?";
             ViewBag.Canonical = "https://www.codereviewchecklist.com/about/";
             ViewBag.Image = "https://www.codereviewchecklist.com/images/code-review-checklist.png";
 
