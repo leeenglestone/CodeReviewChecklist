@@ -23,6 +23,7 @@ namespace CodeReviewChecklist.CoreMvcWebApplication.Controllers
             ViewBag.Title = "Code Review Checklist";
             ViewBag.MetaDescription = "What is a Code Review Checklist and why might you benefit from one?";
             ViewBag.Canonical = "https://www.codereviewchecklist.com/";
+            ViewBag.Image = "https://www.codereviewchecklist.com/images/code-review-checklist.png";
 
             return View();
         }
@@ -33,6 +34,7 @@ namespace CodeReviewChecklist.CoreMvcWebApplication.Controllers
             ViewBag.Title = "About Code Review Checklist";
             ViewBag.MetaDescription = "Why was Code Review Checklist created any by whom?";
             ViewBag.Canonical = "https://www.codereviewchecklist.com/about/";
+            ViewBag.Image = "https://www.codereviewchecklist.com/images/code-review-checklist.png";
 
             return View();
         }
