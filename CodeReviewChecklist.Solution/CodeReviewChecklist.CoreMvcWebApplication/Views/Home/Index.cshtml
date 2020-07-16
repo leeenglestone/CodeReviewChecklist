@@ -1,0 +1,107 @@
+﻿@{
+}
+    <div class="text-center">
+        <h1 class="display-4">Code Review Checklist</h1>
+        <partial name="_ShareButtons" />
+
+        <p id="intro">The following checklist for code reviews isn't meant to be an exhaustive list to cover every eventuality. <br />Merely a prompt to make sure you've thought of some of the common scenarios.</p>
+        <p>Under Construction: Please bear with us while this page is under construction</p>
+
+        <div class="flex-container">
+
+            <div class="checklist">
+                <h2>Requirements</h2>
+
+                <ul>
+                    <li><input type="checkbox" /> Have the requirements been met? </li>
+                    <li><input type="checkbox" /> Have stakeholder(s) approved the change? </li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h2>Code Formatting</h2>
+
+                <ul>
+                    <li><input type="checkbox" /> Is the code formatted correctly? </li>
+                    <li><input type="checkbox" /> Unecessary whitespace removed? </li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h2>Best Practices</h2>
+
+                <ul>
+                    <li><input type="checkbox" /> Follow Single Responsibility principle? </li>
+                    <li><input type="checkbox" /> Are different errors handled correctly? </li>
+                    <li><input type="checkbox" /> Are errors and warnings logged? </li>
+                    <li><input type="checkbox" /> Magic values avoided? </li>
+                    <li><input type="checkbox" /> No unnecessary comments? </li>
+                    <li><input type="checkbox" /> Minimal nesting used? </li>
+
+
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h2>Maintainability</h2>
+
+                <ul>
+                    <li><input type="checkbox" /> Is the code easy to read? </li>
+                    <li><input type="checkbox" /> Is the code not repeated (DRY Principle)?  </li>
+                    <li><input type="checkbox" /> Is the code method/class not too long? </li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h2>Performance</h2>
+
+                <ul>
+                    <li><input type="checkbox" /> Is the code performance acceptable? </li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h2>Architecture</h2>
+
+                <ul>
+                    <li><input type="checkbox" /> Is it secure/free from risk? </li>
+                    <li><input type="checkbox" /> Are separations of concerned followed? </li>
+                    <li><input type="checkbox" /> Relevant Parameters are configurable? </li>
+                    <li><input type="checkbox" /> Feature switched if necessary? </li>
+
+
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h2>Testing</h2>
+
+                <ul>
+                    <li><input type="checkbox" /> Do unit tests pass? </li>
+                    <li><input type="checkbox" /> Do manual test plans pass? </li>
+                    <li><input type="checkbox" /> Has been peer review tested? </li>
+                    <li><input type="checkbox" /> Have edge cases been tested? </li>
+                    <li><input type="checkbox" /> Are invalid inputs validated? </li>
+                    <li><input type="checkbox" /> Are inputs sanitised? </li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h2>Documentation</h2>
+
+                <ul>
+                    <li><input type="checkbox" /> Is there sufficient documentation? </li>
+                    <li><input type="checkbox" /> Is the ReadMe.md file up to date? </li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h2>Other</h2>
+
+                <ul>
+                    <li><input type="checkbox" /> Has the release been annotated (GA etc)? </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
