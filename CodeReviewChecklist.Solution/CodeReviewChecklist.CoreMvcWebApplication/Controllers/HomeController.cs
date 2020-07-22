@@ -35,6 +35,17 @@ namespace CodeReviewChecklist.CoreMvcWebApplication.Controllers
             return View();
         }
 
+        [Route("/opensource/")]
+        public IActionResult OpenSource()
+        {
+            ViewBag.Title = "Code Review Checklist is Open Source";
+            ViewBag.MetaDescription = "Code Review Checklist is Open Source and encourages contributions";
+            ViewBag.Canonical = "https://www.codereviewchecklist.com/opensource/";
+            ViewBag.Image = "https://www.codereviewchecklist.com/images/code-review-checklist.png";
+
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
