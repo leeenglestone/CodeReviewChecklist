@@ -5,3 +5,38 @@
 <p>This website is open source on <a href="https://github.com/leeenglestone/CodeReviewChecklist/">GitHub</a>, so you can help make it better!</p>
 
 <p>There are existing issues ranging from layout, content and design. You can also make your own suggests.</p>
+
+<hr />
+
+<div id="github-issues"></div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    var urlToGetAllOpenBugs = "https://api.github.com/repos/leeenglestone/codereviewchecklist/issues?state=open";
+
+    $(document).ready(function () {
+        $.getJSON(urlToGetAllOpenBugs, function (allIssues) {
+            $("div#github-issues").append("There are " + allIssues.length + " outstanding issues:</br>");
+            $.each(allIssues, function (i, issue) {
+
+                // Get assignee (if applicable)
+                var assigneeName = "Unassigned";
+                if (issue.assignee) {
+                    assigneeName = issue.assignee.login;
+                }
+
+                // Calculate number of days ago created
+                var today = new Date();
+                var timeDifference = today - Date.parse(issue.created_at);
+                var daysAgo = (timeDifference / (1000 * 3600 * 24)).toFixed();
+
+                $("div#github-issues")
+                    .append("<div style=\"margin-bottom:20px;\">")
+                    .append("<strong><a href=\"" + issue.html_url + "\">" + issue.title + "</a></strong></br>")
+                    .append("#" + issue.number + " opened " + daysAgo + " days ago by " + issue.user.login + "</br>")
+                    .append("Assigned to: " + assigneeName)
+                    .append("</div>");
+            });
+        });
+    });
+</script>
