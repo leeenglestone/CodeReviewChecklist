@@ -84,8 +84,7 @@ ul {
 }
 
 .checklist {
-    min-width: 33%;
-    max-width: 33%;
+    width:33%;
     margin-top: 20px;
 }
 
@@ -111,4 +110,45 @@ img.circle-image-headshot {
     border-radius: 50%;
     height: 150px;
     width: 150px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .checklist {
+        width:100%;
+        margin-top: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .checklist {
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .checklist {
+        width: 33%;
+        margin-top: 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .checklist {
+        width: 33%;
+        margin-top: 20px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .checklist {
+        width: 33%;
+        margin-top: 20px;
+    }
 }
