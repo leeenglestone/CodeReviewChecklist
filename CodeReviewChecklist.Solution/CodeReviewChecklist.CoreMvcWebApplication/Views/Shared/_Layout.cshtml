@@ -42,6 +42,9 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="OpenSource">Open Source</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="theme-switch-wrapper">
@@ -62,7 +65,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container text-center">
-            &copy; @DateTime.Now.Year - CodeReviewChecklist.com
+            &copy; @DateTime.Now.Year - CodeReviewChecklist.com | <a href="https://github.com/leeenglestone/CodeReviewChecklist">GitHub Repository</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
