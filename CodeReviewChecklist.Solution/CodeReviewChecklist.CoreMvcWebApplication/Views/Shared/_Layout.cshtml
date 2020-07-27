@@ -25,6 +25,7 @@
     <meta property="og:type" content="webpage" />
     <link rel="canonical" href="@ViewData["Canonical"]" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
 </head>
@@ -43,7 +44,7 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="OpenSource">Open Source</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="OpenSource">Open Source</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +52,7 @@
                     <div class="navPadding">Dark Theme</div>
                     <label class="theme-switch" for="checkbox">
                         <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
+                        <span class="slider round"></span>
                     </label>
                 </div>
             </div>
