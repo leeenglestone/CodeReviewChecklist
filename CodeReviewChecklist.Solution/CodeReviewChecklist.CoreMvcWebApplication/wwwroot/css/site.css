@@ -11,23 +11,6 @@ a.navbar-brand {
     text-align: center;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-    color: #0366d6;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -98,9 +81,6 @@ h2 {
     text-align: left;
 }
 
-h1 {
-}
-
 #intro {
     margin-bottom: 30px;
 }
@@ -111,7 +91,6 @@ img.circle-image-headshot {
     height: 150px;
     width: 150px;
 }
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -152,3 +131,98 @@ img.circle-image-headshot {
         margin-top: 20px;
     }
 }
+
+/*Toggle switch styling*/
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #66bb6a;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+/* Adding theme support */
+ :root {
+    --primary-color: #424242;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
+  
+body{
+    color: var(--font-color);
+    background-color: var(--bg-color);
+}
+
+.navbar{
+    color: var(--font-color) !important;
+    background-color: var(--bg-color) !important;
+}
+
+a.navbar-brand{
+    color: var(--font-color) !important;
+    background-color: var(--bg-color) !important;
+}
+
+.nav-link{
+    color: var(--font-color) !important;
+    background-color: var(--bg-color) !important;
+}
+
+.navPadding{
+    padding-right: 8px;
