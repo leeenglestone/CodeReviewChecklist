@@ -1,5 +1,3 @@
-using System;
-
 namespace CodeReviewChecklist.CoreMvcWebApplication.Models
 {
     public class ErrorViewModel
