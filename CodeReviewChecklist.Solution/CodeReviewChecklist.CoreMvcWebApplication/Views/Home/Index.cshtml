@@ -11,8 +11,8 @@
             <h2>Requirements</h2>
 
             <ul>
-                <li><input type="checkbox" /> Have the requirements been met? </li>
-                <li><input type="checkbox" /> Have stakeholder(s) approved the change? </li>
+                <li><input type="checkbox" id="requirements-checkbox" /><label for="requirements-checkbox"> Have the requirements been met? </label></li>
+                <li><input type="checkbox" id="stakeholders-checkbox"/><label for="stakeholders-checkbox"> Have stakeholder(s) approved the change? </label></li>
             </ul>
         </div>
 
@@ -20,8 +20,8 @@
             <h2>Code Formatting</h2>
 
             <ul>
-                <li><input type="checkbox" /> Is the code formatted correctly? </li>
-                <li><input type="checkbox" /> Unecessary whitespace removed? </li>
+                <li><input type="checkbox" id="formatting-checkbox" /><label for="formatting-checkbox"> Is the code formatted correctly? </label></li>
+                <li><input type="checkbox" id="whitespace-checkbox" /><label for="whitespace-checkbox">  Unecessary whitespace removed? </label></li>
             </ul>
         </div>
 
@@ -29,12 +29,12 @@
             <h2>Best Practices</h2>
 
             <ul>
-                <li><input type="checkbox" /> Follow Single Responsibility principle? </li>
-                <li><input type="checkbox" /> Are different errors handled correctly? </li>
-                <li><input type="checkbox" /> Are errors and warnings logged? </li>
-                <li><input type="checkbox" /> Magic values avoided? </li>
-                <li><input type="checkbox" /> No unnecessary comments? </li>
-                <li><input type="checkbox" /> Minimal nesting used? </li>
+                <li><input type="checkbox" id="srp-checkbox" /><label for="srp-checkbox"> Follow Single Responsibility principle? </label></li>
+                <li><input type="checkbox" id="error-handling-checkbox" /><label for="error-handling-checkbox"> Are different errors handled correctly? </label></li>
+                <li><input type="checkbox" id="logging-checkbox" /><label for="logging-checkbox"> Are errors and warnings logged? </label></li>
+                <li><input type="checkbox" id="magic-values-checkbox" /><label for="magic-values-checkbox"> Magic values avoided? </label></li>
+                <li><input type="checkbox" id="comments-checkbox" /><label for="comments-checkbox"> No unnecessary comments? </label></li>
+                <li><input type="checkbox" id="nesting-checkbox" /><label for="nesting-checkbox"> Minimal nesting used? </label></li>
             </ul>
         </div>
 
@@ -42,9 +42,9 @@
             <h2>Maintainability</h2>
 
             <ul>
-                <li><input type="checkbox" /> Is the code easy to read? </li>
-                <li><input type="checkbox" /> Is the code not repeated (DRY Principle)?  </li>
-                <li><input type="checkbox" /> Is the code method/class not too long? </li>
+                <li><input type="checkbox" id="readability-checkbox" /><label for="readability-checkbox"> Is the code easy to read? </label></li>
+                <li><input type="checkbox" id="dry-checkbox" /><label for="dry-checkbox"> Is the code not repeated (DRY Principle)? </label></li>
+                <li><input type="checkbox" id="length-checkbox" /><label for="length-checkbox"> Is the code method/class not too long? </label></li>
             </ul>
         </div>
 
@@ -52,7 +52,7 @@
             <h2>Performance</h2>
 
             <ul>
-                <li><input type="checkbox" /> Is the code performance acceptable? </li>
+                <li><input type="checkbox" id="performance-checkbox" /><label for="performance-checkbox"> Is the code performance acceptable? </label></li>
             </ul>
         </div>
 
@@ -60,10 +60,10 @@
             <h2>Architecture</h2>
 
             <ul>
-                <li><input type="checkbox" /> Is it secure/free from risk? </li>
-                <li><input type="checkbox" /> Are separations of concerned followed? </li>
-                <li><input type="checkbox" /> Relevant Parameters are configurable? </li>
-                <li><input type="checkbox" /> Feature switched if necessary? </li>
+                <li><input type="checkbox" id="risk-checkbox" /><label for="risk-checkbox"> Is it secure/free from risk? </label></li>
+                <li><input type="checkbox" id="seperation-of-concerns-checkbox" /><label for="seperation-of-concerns-checkbox"> Are separations of concerned followed? </label></li>
+                <li><input type="checkbox" id="parameter-configuration-checkbox" /><label for="parameter-configuration-checkbox"> Relevant Parameters are configurable? </label></li>
+                <li><input type="checkbox" id="feature-switch-checkbox" /><label for="feature-switch-checkbox"> Feature switched if necessary? </label></li>
             </ul>
         </div>
 
@@ -71,12 +71,12 @@
             <h2>Testing</h2>
 
             <ul>
-                <li><input type="checkbox" /> Do unit tests pass? </li>
-                <li><input type="checkbox" /> Do manual test plans pass? </li>
-                <li><input type="checkbox" /> Has been peer review tested? </li>
-                <li><input type="checkbox" /> Have edge cases been tested? </li>
-                <li><input type="checkbox" /> Are invalid inputs validated? </li>
-                <li><input type="checkbox" /> Are inputs sanitised? </li>
+                <li><input type="checkbox" id="passing-unit-tests-checkbox" /><label for="passing-unit-tests-checkbox"> Do unit tests pass? </label></li>
+                <li><input type="checkbox" id="manual-test-plan-checkbox" /><label for="manual-test-plan-checkbox"> Do manual test plans pass? </label></li>
+                <li><input type="checkbox" id="peer-review-checkbox" /><label for="peer-review-checkbox"> Has been peer review tested? </label></li>
+                <li><input type="checkbox" id="edge-cases-checkbox" /><label for="edge-cases-checkbox"> Have edge cases been tested? </label></li>
+                <li><input type="checkbox" id="validate-inputs-checkbox" /><label for="validate-inputs-checkbox"> Are invalid inputs validated? </label></li>
+                <li><input type="checkbox" id="sanitise-inputs-checkbox" /><label for="sanitise-inputs-checkbox"> Are inputs sanitised? </label></li>
             </ul>
         </div>
 
@@ -84,8 +84,8 @@
             <h2>Documentation</h2>
 
             <ul>
-                <li><input type="checkbox" /> Is there sufficient documentation? </li>
-                <li><input type="checkbox" /> Is the ReadMe.md file up to date? </li>
+                <li><input type="checkbox" id="documentation-checkbox" /><label for="documentation-checkbox"> Is there sufficient documentation? </label></li>
+                <li><input type="checkbox" id="readme-checkbox" /><label for="readme-checkbox"> Is the ReadMe.md file up to date? </label></li>
             </ul>
         </div>
 
@@ -93,7 +93,7 @@
             <h2>Other</h2>
 
             <ul>
-                <li><input type="checkbox" /> Has the release been annotated (GA etc)? </li>
+                <li><input type="checkbox" id="release-annotation-checkbox" /><label for="release-annotation-checkbox"> Has the release been annotated (GA etc)? </label></li>
             </ul>
         </div>
     </div>

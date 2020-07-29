@@ -67,9 +67,14 @@ ul {
 }
 
 .checklist {
-    width:33%;
+    width: 33%;
     margin-top: 20px;
 }
+
+    .checklist label {
+        margin-bottom: unset;
+        margin-left: 4px;
+    }
 
 .flex-container {
     display: flex;
