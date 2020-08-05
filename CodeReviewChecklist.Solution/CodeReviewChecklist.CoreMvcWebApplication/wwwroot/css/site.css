@@ -76,6 +76,10 @@ ul {
         margin-left: 4px;
     }
 
+    .checklist input:checked + label {
+        text-decoration: line-through;
+    }
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -229,5 +233,6 @@ a.navbar-brand{
     background-color: var(--bg-color) !important;
 }
 
-.navPadding{
+.navPadding {
     padding-right: 8px;
+}
