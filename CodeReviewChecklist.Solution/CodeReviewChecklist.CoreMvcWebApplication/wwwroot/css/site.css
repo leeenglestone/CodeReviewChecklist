@@ -107,6 +107,11 @@ img.circle-image-headshot {
         width:100%;
         margin-top: 20px;
     }
+
+    h1.display-4 
+    {
+        font-size:2rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
