@@ -12,11 +12,11 @@ This project is open source and accepting contributions.
 
 - Light Theme
 
-  ![Screenshot 2020-10-07 at 5.15.50 PM](/Users/hakim/Pictures/Screenshot/Screenshot 2020-10-07 at 5.15.50 PM.png)
+  ![image](https://user-images.githubusercontent.com/13238350/95314068-6caf3a00-08c3-11eb-8f8d-40b81dbec21c.png)
 
 - Dark Theme
 
-  ![Screenshot 2020-10-07 at 5.16.20 PM](/Users/hakim/Pictures/Screenshot/Screenshot 2020-10-07 at 5.16.20 PM.png)
+  ![image](https://user-images.githubusercontent.com/13238350/95314000-573a1000-08c3-11eb-89cd-4fbdb1919b72.png)
 
 
 
@@ -24,7 +24,7 @@ This project is open source and accepting contributions.
 
 - Light Theme
 
-  ![Screenshot 2020-10-07 at 5.16.00 PM](/Users/hakim/Pictures/Screenshot/Screenshot 2020-10-07 at 5.16.00 PM.png)
+  ![image](https://user-images.githubusercontent.com/13238350/95313773-18a45580-08c3-11eb-8aa0-b23706b711c3.png)
 
 - Dark Theme
 
