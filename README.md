@@ -22,9 +22,9 @@ This project is open source and accepting contributions.
 ### Mobile View
 
 - Light Theme
-  ![image](Screenshots/mobile-light.png)
 
+![image](Screenshots/mobile-light.png)
+  
+- Dark Theme
 
-
--	Dark Theme
 ![image](Screenshots/mobile-dark.png)
