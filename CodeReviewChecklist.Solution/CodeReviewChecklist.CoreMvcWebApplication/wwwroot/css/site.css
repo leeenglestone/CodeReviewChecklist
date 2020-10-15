@@ -249,7 +249,6 @@ a.navbar-brand{
     background-color: var(--bg-color) !important;
 }
 
-// navbar toggler icon for both light and dark themes
 .navbar-toggler-icon {
     background-image: var(--nav-toggle-icon);
 }
