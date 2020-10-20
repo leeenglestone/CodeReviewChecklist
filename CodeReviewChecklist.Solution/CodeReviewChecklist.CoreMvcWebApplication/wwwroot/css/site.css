@@ -118,6 +118,11 @@ img.circle-image-headshot {
         width: 50px;
         line-height: 125%;
     }
+
+    .navbar-brand
+    {
+        font-size:1.1em;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
